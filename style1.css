@@ -2,80 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*color: #6c6b6b;*/
 }
 
 header {
-    width: 100%;
     height: 50px;
-    background-color: orange;
+    background-color: #FF9A4B;
 }
 
-.main {
-    padding: 50px 0px;
+main {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.main-box {
     display: flex;
     justify-content: center;
 }
 
-.content {
-    margin: 20px ;
-    padding: 20px;
-    width: 95%;
-    height: 400px;
-    background-color: #e3e3e3;
+.step-box {
+    padding: 10px;
+    margin-right: 30px;
+    background-color: #EEEEEE;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.step {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background-color: orange;
-    padding: 3px 0;
+.step-box:last-child {
+    margin: 0;
 }
 
-.content-text {
-    padding: 10px 0px;
-}
-
-.content img {
+.step-img1 {
     width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(task-image/flow01.png);
+}
+
+.step-img2 {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(task-image/flow02.png);
+}
+
+.step-img3 {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(task-image/flow03.png);
+}
+
+.step-num {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 2px 0;
+    background-color: #FF9A4B;
+    color: white;
+}
+.title {
+    padding: 15px 0 5px 0;
 }
 
 footer {
-    width: 100%;
     height: 50px;
-    background-color: silver;
+    background-color: #AAAAAA;   
 }
 
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 768px) {
     header {
-        width:100%;
+        width: 100%;
     }
     
-    .main {
+    main {
         width: 100%;
+    }
+    
+    .main-box {
+        width:90%;
+        margin: 0 auto;
         display: block;
     }
     
-    .content {
-        width: 90%;
-        height: 260px;
-        padding: 10px ;
+    .step-box {
+        width:100%;
+        margin-bottom:20px;
     }
     
-    .content-text {
-        width: 100%;
+    .step-box:last-child {
+        margin: 0;
     }
 
-    .content img {
-        width: 100%;    
-        height: 150px;
-    }
-    
     footer {
         width: 100%;
     }
-    
 }
